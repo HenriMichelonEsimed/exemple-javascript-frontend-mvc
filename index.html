@@ -10,6 +10,15 @@
     <link rel="stylesheet" type="text/css" href="res/css/index.css"/>
 </head>
 <body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Cars</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Liste des véhicules</a></li>
+                <li><a href="#" onclick="logout();">Se déconnecter</a></li>
+            </ul>
+        </div>
+    </nav>
     <div id="content"></div>
 
     <div id="modalConfirmDelete" class="modal">
@@ -31,5 +40,11 @@
     <script type="application/ecmascript" src="app/controllers/basecontroller.js"></script>
     <script type="application/ecmascript" src="app/controllers/baseformcontroller.js"></script>
     <script>navigate("index")</script>
+    <script>
+        const logout = function() {
+            sessionStorage.removeItem("token")
+            window.location.replace("index.html")
+        }
+    </script>
 </body>
 </html>

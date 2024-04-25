@@ -16,4 +16,13 @@ class UserAccountAPI extends BaseAPIService {
             }
         }).catch(err => reject(err)))
     }
+
+    insert(useraccount) {
+        this.headers.set('Content-Type', 'application/json' )
+        return fetch(this.url, {
+            method: 'POST',
+            headers: this.headers,
+            body: JSON.stringify(useraccount)
+        }).then(res => res.status)
+    }
 }

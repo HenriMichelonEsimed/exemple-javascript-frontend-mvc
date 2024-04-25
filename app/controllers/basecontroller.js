@@ -46,4 +46,5 @@ class BaseController {
             navigate(view)
         }; history.pushState({}, '');
     }
+
 }

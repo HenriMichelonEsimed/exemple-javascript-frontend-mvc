@@ -11,11 +11,15 @@
 </head>
 <body>
     <div class="container">
-        <h3>Connexion</h3>
+        <h3>Création d'un compte</h3>
         <div>
             <div class="row">
                 <form class="col s12" id="formLogin">
                     <div class="row">
+                        <div class="input-field col s12">
+                            <input id="fieldDisplayname" type="text" class="validate">
+                            <label for="fieldDisplayname" class="active">Nom affiché</label>
+                        </div>
                         <div class="input-field col s12">
                             <input id="fieldLogin" type="text" class="validate">
                             <label for="fieldLogin" class="active">Nom d'utilisateur</label>
@@ -28,10 +32,7 @@
                 </form>
             </div>
             <div class="row">
-                <button class="waves-effect waves-light btn" onclick="loginController.authenticate()"><i class="material-icons right">check</i>Se connecter</button>
-            </div>
-            <div class="row">
-                <button class="waves-effect waves-light btn" onclick="window.location.replace('signin.html');"><i class="material-icons right">add</i>Créer un compte</button>
+                <button class="waves-effect waves-light btn" onclick="signInController.signin()"><i class="material-icons right">check</i>Créer un compte</button>
             </div>
         </div>
     </div>
@@ -44,6 +45,6 @@
     <script type="application/ecmascript" src="app/services/useraccountapi.js"></script>
     <script type="application/ecmascript" src="app/controllers/basecontroller.js"></script>
     <script type="application/ecmascript" src="app/controllers/baseformcontroller.js"></script>
-    <script type="application/ecmascript" src="app/controllers/login.js"></script>
+    <script type="application/ecmascript" src="app/controllers/signin.js"></script>
 </body>
 </html>

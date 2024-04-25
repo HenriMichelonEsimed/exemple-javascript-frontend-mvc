@@ -10,3 +10,11 @@ class Car {
         return `${this.make} ${this.model}`
     }
 }
+
+class UserAccount {
+    constructor(displayname, login, password) {
+        this.displayname = displayname
+        this.login = login
+        this.password = password
+    }
+}

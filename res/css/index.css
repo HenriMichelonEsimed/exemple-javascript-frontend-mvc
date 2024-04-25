@@ -6,3 +6,10 @@ td.icon {
     width: 128px;
 }
 
+.nav-wrapper {
+    background-color: cadetblue;
+}
+
+.brand-logo {
+    margin-left: 15px;
+}
