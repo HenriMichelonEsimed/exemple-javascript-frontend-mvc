@@ -1,4 +1,4 @@
-const serviceBaseUrl = "http://sys.esimed.fr:3333"
+const serviceBaseUrl = "https://www.main-bvxea6i-hsojdlyefbwdy.fr-3.platformsh.site"
 
 class BaseAPIService {
     constructor(url) {
